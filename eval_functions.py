@@ -7,7 +7,7 @@ def parse_krn_content(krn, ler_parsing=False, cer_parsing=False):
         tokens = krn.split(" ")
         characters = []
         for token in tokens:
-            if token not in ['<b>', '<t>']:
+            if token in ['<b>', '<t>']:
                 characters.append(token)
             else:
                 for char in token:
