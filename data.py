@@ -36,7 +36,7 @@ def batch_preparation_ctc(data):
 
 @logger.catch
 @gin.configurable
-def load_data(partition_file, resize_ratio, use_raw_krn=False, load_distorted=False, extension=".bekrn"):
+def load_data(partition_file, resize_ratio=1, use_raw_krn=False, load_distorted=False, extension=".bekrn"):
     X = []
     Y = []
     with open(partition_file) as partfile:
