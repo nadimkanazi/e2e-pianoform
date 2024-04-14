@@ -47,7 +47,7 @@ def load_data(partition_file, resize_ratio=1, use_raw_krn=False, load_distorted=
                 file_path = file_path.replace(".bekrn", extension)
             krn = None
             krnlines = []
-            file_path = f"Data/{file_path}"
+            #file_path = f"Data/{file_path}"
             if os.path.isfile(file_path):
                 with open(file_path) as krnfile:
                     krn = krnfile.read()
